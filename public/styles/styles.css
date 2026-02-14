@@ -1,0 +1,99 @@
+
+body{
+    background-color: rgb(17,122,202);
+    margin: 0;
+    padding: clamp(16px, 4vw, 50px);
+    min-height: 100vh;     
+    display: flex;           
+    flex-direction: column;
+}
+.img-header{
+  height: 220px;                 
+  background-image: url("https://bit.ly/305-vacation");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
+}
+
+ h1{
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin: 0;
+}
+
+fieldset{
+    background-color: white;
+    border: none;
+    border-radius: 0 0 16px 16px;
+    padding: 20px;
+    
+
+}
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  flex: 1;         
+  width: 100%;
+}
+
+.vacation-fieldset{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+.form-destination{
+    grid-column: 1 / span 2;
+     display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-date{
+    grid-column: 1/ 2;
+     display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-travelers{
+    grid-column: 2/3;
+     display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-button{
+    grid-column: 1 / span 2;
+    text-align: center;
+}
+ 
+button{
+    background-color: rgb(45, 89, 171);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 999px;
+
+}
+
+footer{
+    flex-direction: column;
+    margin-top: 20px;
+    color: white;
+}
+
+@media (max-width: 650px) {
+  .vacation-fieldset {
+    grid-template-columns: 1fr;
+  
+  }
+}

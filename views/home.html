@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Booking Form</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script defer src="/js/vacation.js"></script>
+    <link rel="icon" href="/images/favicon.png">
+</head>
+<body>
+
+    <main class="container">
+         <header class="img-header">
+        <h1>Book Your Dream Vacation</h1>
+    </header>
+        <form class="vacation-form" id="vacation-form" action="/submit-request" method="post">
+    <fieldset class="vacation-fieldset">
+        <div class="form-destination">
+        <label for="destination">Destination: <span class="err" id="err-destination"></span></label>
+        <select id="destination" name="destination">
+            <option value="">Choose a destination</option>
+            <option value="hawaii">Hawaii</option>
+            <option value="paris">Paris</option>
+            <option value="tokyo">Tokyo</option>
+            <option value="sydney">Sydney</option>
+            <option value="rome">Rome</option>
+        </select>
+        </div>
+
+        <div class="form-date">
+        <label for="date">Departure Date:</label>
+        <input type="date" id="date" name="date">
+        </div>
+
+        <div class="form-travelers">
+        <label for="travels">Number of Travelers:<span class="err" id="err-travels"></span></label>
+        <input type="number" id="travels" name="travels" min="1">
+        </div>
+
+        <div class="form-button">
+        <button type="submit">Find My Vacation </button>
+        </div>
+    </fieldset>
+    </form>
+    </main>
+      <footer>
+        <p>GitHub Repository :[]</p>
+    </footer>
+ 
+    
+</body>
+ 
+</html>
